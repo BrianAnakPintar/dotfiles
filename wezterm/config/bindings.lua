@@ -54,8 +54,8 @@ local keys = {
    { key = 'Backspace',  mods = mod.SUPER,     action = act.SendString '\x15' },
 
    -- copy/paste --
-   { key = 'c',          mods = 'CTRL|SHIFT',  action = act.CopyTo('Clipboard') },
-   { key = 'v',          mods = 'CTRL|SHIFT',  action = act.PasteFrom('Clipboard') },
+   { key = 'c',          mods = 'CTRL',  action = act.CopyTo('Clipboard') },
+   { key = 'v',          mods = 'CTRL',  action = act.PasteFrom('Clipboard') },
 
    -- tabs --
    -- tabs: spawn+close
@@ -163,6 +163,21 @@ local keys = {
          timemout_miliseconds = 1000,
       }),
    },
+
+    -- Connect ssh.
+    {
+        key = 's',
+        mods = 'SUPER|SHIFT',
+        action = wezterm.action.SpawnCommandInNewTab {
+            args = { 'ssh', 'bmoniaga@remote.students.cs.ubc.ca' },
+        },
+    },
+    -- Connect to projects directory.
+    {
+        key = 'o',
+        mods = 'SUPER|SHIFT',
+        action = wezterm.action.SendString 'cd $HOME/Documents/PersonalProjects',
+    }
 }
 
 -- stylua: ignore
@@ -195,7 +210,7 @@ local mouse_bindings = {
 
 return {
    disable_default_key_bindings = true,
-   leader = { key = 'Space', mods = 'SHIFT'},
+   leader = { key = 'Space', mods = 'CTRL'},
    keys = keys,
    key_tables = key_tables,
    mouse_bindings = mouse_bindings,

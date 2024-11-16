@@ -32,11 +32,11 @@ local charging_icons = {
 }
 
 local colors = {
-   date_fg = '#fab387',
+   date_fg = '#80CED7',
    date_bg = 'rgba(0, 0, 0, 0.4)',
-   battery_fg = '#f9e2af',
+   battery_fg = '#63C7B2',
    battery_bg = 'rgba(0, 0, 0, 0.4)',
-   separator_fg = '#74c7ec',
+   separator_fg = '#70CeC2',
    separator_bg = 'rgba(0, 0, 0, 0.4)',
 }
 
