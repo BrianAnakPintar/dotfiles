@@ -177,6 +177,18 @@ local keys = {
         key = 'o',
         mods = 'SUPER|SHIFT',
         action = wezterm.action.SendString 'cd $HOME/Documents/PersonalProjects',
+    },
+    -- Connect to school directory.
+    {
+        key = 'l',
+        mods = 'SUPER|SHIFT',
+        action = wezterm.action.SendString 'cd $HOME/Documents/school/Year\\ 3/',
+    },
+    -- Connect to config.
+    {
+        key = 'c',
+        mods = 'SUPER|SHIFT',
+        action = wezterm.action.SendString 'cd $HOME/.config',
     }
 }
 
