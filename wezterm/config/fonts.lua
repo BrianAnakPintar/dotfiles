@@ -1,7 +1,8 @@
 local wezterm = require('wezterm')
 local platform = require('utils.platform')
 
-local font = 'JetBrainsMono Nerd Font'
+-- local font = 'JetBrainsMono Nerd Font'
+local font = 'JetBrains Mono'
 local font_size = 14
 
 return {

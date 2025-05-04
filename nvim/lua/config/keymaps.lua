@@ -7,7 +7,8 @@ vim.keymap.set("n", "<C-k>", "<C-w>k", opts)
 vim.keymap.set("n", "<C-l>", "<C-w>l", opts)
 
 -- Keybinds for Nvim-Tree
-vim.keymap.set("n", "<leader>t", ":NvimTreeToggle<CR>")
+vim.keymap.set("n", "<leader>tt", ":NvimTreeToggle<CR>")
+vim.keymap.set("n", "<leader>th", ":ThemePicker<CR>")
 
 -- Telescope
 vim.keymap.set("n", "<leader>ff", ":Telescope find_files<CR>")
