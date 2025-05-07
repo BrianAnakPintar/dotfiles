@@ -60,3 +60,10 @@ vim.keymap.set('n', 'K', vim.lsp.buf.hover, opts)
 vim.keymap.set('n', 'gr', vim.lsp.buf.references, opts)
 vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, opts)
 vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, opts)
+
+-- Buffers
+vim.keymap.set("n", "<Tab>", ":BufferNext<CR>", { noremap = true, silent = true })
+vim.keymap.set("n", "<S-Tab>", ":BufferPrevious<CR>", { noremap = true, silent = true })
+vim.keymap.set('n', '<leader>x', ":BufferClose<CR>")
+
+vim.keymap.set('n', '<leader>do', vim.diagnostic.open_float, { desc = 'Open diagnostics float' })

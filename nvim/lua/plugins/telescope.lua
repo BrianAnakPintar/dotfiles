@@ -8,6 +8,9 @@ return {
 			"edge",
 			"kanagawa-dragon",
 			"kanagawa-wave",
+			"everforest",
+			"rose-pine",
+			"nightfox",
 		}
 
 		local pickers = require("telescope.pickers")
