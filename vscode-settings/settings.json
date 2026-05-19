@@ -1,0 +1,76 @@
+// User settings
+{
+  "files.autoSave": "onFocusChange",
+  "workbench.startupEditor": "none",
+  "editor.inlineSuggest.enabled": true,
+  "editor.fontSize": 14,
+  "vim.vimrc.enable": true,
+  "editor.fontFamily": "Menlo, Monaco, 'Courier New', monospace, 'Hack NF'",
+  "terminal.integrated.fontFamily": "'Hack Nerd Font'",
+  "workbench.iconTheme": "material-icon-theme",
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  "[c]": {
+    "editor.wordBasedSuggestions": "off",
+    "editor.suggest.insertMode": "replace",
+    "editor.semanticHighlighting.enabled": true
+  },
+  "[cpp]": {
+    "editor.wordBasedSuggestions": "off",
+    "editor.suggest.insertMode": "replace",
+    "editor.semanticHighlighting.enabled": true
+  },
+  "cmake.pinnedCommands": [
+    "workbench.action.tasks.configureTaskRunner",
+    "workbench.action.tasks.runTask"
+  ],
+  "vim.enableNeovim": true,
+  "C_Cpp.codeAnalysis.clangTidy.enabled": true,
+  "vim.neovimUseConfigFile": true,
+  "vim.smartRelativeLine": true,
+  "vim.whichwrap": "b,s,h,l",
+  "vim.leader": "<space>",
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      // Lookup a file in the project
+      "before": ["<leader>", "h"],
+      "commands": ["workbench.action.terminal.toggleTerminal"]
+    },
+    {
+      "before": ["<tab>"],
+      "commands": ["workbench.action.nextEditor"]
+    },
+    {
+      "before": ["<C-n>"],
+      "commands": ["workbench.action.toggleSidebarVisibility"]
+    },
+    {
+      "before": ["<leader>", "f", "f"],
+      "commands": ["workbench.action.quickOpen"]
+    }
+  ],
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": [">"],
+      "after": [">", "g", "v"]
+    },
+    {
+      "before": ["<"],
+      "after": ["<", "g", "v"]
+    }
+  ],
+  "workbench.colorCustomizations": {
+    "statusBar.foreground": "#ffffff",
+    "statusBar.debuggingForeground": "#ffffff"
+  },
+  "svelte.enable-ts-plugin": true,
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "vim.useSystemClipboard": true,
+  "update.mode": "none",
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
