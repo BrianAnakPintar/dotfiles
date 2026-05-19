@@ -1,0 +1,39 @@
+// Place your key bindings in this file to override the defaults
+[
+  {
+    // "cmd+[": Goes to previous editor in group
+    "key": "cmd+[",
+    "command": "workbench.action.previousEditor"
+  },
+  {
+    // "cmd+]": Goes to next editor in group
+    "key": "cmd+]",
+    "command": "workbench.action.nextEditor"
+  },
+
+  {
+    "key": "space space", // double space (key chord)
+    "command": "workbench.action.showCommands", // opens Ctrl+Shift+P
+    "when": "vim.mode == 'Normal' && editorTextFocus"
+  },
+
+  {
+    "key": "space x",
+    "command": "workbench.action.closeActiveEditor",
+    "when": "vim.mode == 'Normal' && editorTextFocus"
+  },
+
+  // Move to next tab with Tab
+  {
+    "key": "tab",
+    "command": "workbench.action.nextEditor",
+    "when": "vim.mode == 'Normal' && editorTextFocus"
+  },
+
+  // Move to previous tab with Shift+Tab
+  {
+    "key": "shift+tab",
+    "command": "workbench.action.previousEditor",
+    "when": "vim.mode == 'Normal' && editorTextFocus"
+  }
+]
